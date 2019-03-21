@@ -13,14 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-baseurl: https://jumpgh.github.io/proxia-site/
 title: proxia
 email: sales@proxia.ru
 tel: +7(495)204-60-10
 description: >- # this means to ignore newlines until "baseurl:"
   ООО "ПРОКСИА" 140180 г. Жуковский, Московской области, ул. Лесная д.5, офис 101
   +7 (495) 204-60-10  доб: 413, 459;
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/proxia-site" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
@@ -28,20 +27,20 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # navbar
 nav:
   - title: продукты
-    url: {{site.baseurl}}/products/
+    url: /products
   - title: партнерам
-    url: {{site.baseurl}}/partners/
+    url: /partners
   - title: платформа IoT
-    url: {{site.baseurl}}/platform/
+    url: /platform
   - title: use case
-    url: {{site.baseurl}}/usecase/
+    url: /usecase
     submenu:
       - title: case 1
-        url: {{site.baseurl}}/usecase/case1.html
+        url: /usecase/case1.html
       - title: case 2
-        url: {{site.baseurl}}/usecase/case2.html
+        url: /usecase/case2.html
   - title: about
-    url: {{site.baseurl}}/about/
+    url: /about
 
 
 # Build settings

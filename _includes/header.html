@@ -1,11 +1,11 @@
 <header class="site-header">
 
   <div class="wrapper">
-	  
-    <a class="branding-logo" href="/">
-      <h1 class="site-title" ></h1>
-    	<!--img alt="{{ site.title | escape }}" width="102" height="90%" src="assets/logo.svg"-->
-    </a>
+	  <h1 class="site-title" >
+      <a class="branding-logo" href="{{site.baseurl}}/">
+      	<img alt="{{ site.title | escape }}" width="120" height="90%" src="{{site.baseurl}}/assets/logo.svg">
+      </a>
+	  </h1>
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
