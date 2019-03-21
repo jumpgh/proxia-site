@@ -25,7 +25,6 @@ $menu-height: 60px;
 .wrapper {
     max-width: -webkit-calc(1000px - (30px * 2));
     max-width: calc(1000px - (30px * 2));
-    height: $menu-height;
     margin-right: auto;
     margin-left: auto;
     padding-right: 30px;
@@ -93,7 +92,7 @@ nav ul {
 }
 
 .page-content {
-	margin-bottom: 400px;	
+	margin-bottom: 100px;	
 }
 
 .submenu {
