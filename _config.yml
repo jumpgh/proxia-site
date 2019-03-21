@@ -27,20 +27,20 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # navbar
 nav:
   - title: продукты
-    url: /products/
+    url: products/
   - title: партнерам
-    url: /partners/
+    url: partners/
   - title: платформа IoT
-    url: platform
+    url: platform/
   - title: use case
-    url: /usecase/
+    url: usecase/
     submenu:
       - title: case 1
         url: /usecase/case1.html
       - title: case 2
         url: /usecase/case2.html
   - title: about
-    url: about
+    url: about/
 
 
 # Build settings

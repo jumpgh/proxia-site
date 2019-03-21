@@ -12,6 +12,15 @@ $menu-height: 60px;
 	z-index: 100;
 }
 
+.site-title {
+	height: $menu-height;
+	width: 120px;
+    background-image: url(../logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 // override width of the content area
 .wrapper {
     max-width: -webkit-calc(1000px - (30px * 2));
