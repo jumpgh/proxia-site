@@ -13,6 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+baseurl: https://jumpgh.github.io/proxia-site/
 title: proxia
 email: sales@proxia.ru
 tel: +7(495)204-60-10
@@ -27,20 +28,20 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # navbar
 nav:
   - title: продукты
-    url: products/
+    url: {{site.baseurl}}/products/
   - title: партнерам
-    url: partners/
+    url: {{site.baseurl}}/partners/
   - title: платформа IoT
-    url: platform/
+    url: {{site.baseurl}}/platform/
   - title: use case
-    url: usecase/
+    url: {{site.baseurl}}/usecase/
     submenu:
       - title: case 1
-        url: /usecase/case1.html
+        url: {{site.baseurl}}/usecase/case1.html
       - title: case 2
-        url: /usecase/case2.html
+        url: {{site.baseurl}}/usecase/case2.html
   - title: about
-    url: about/
+    url: {{site.baseurl}}/about/
 
 
 # Build settings

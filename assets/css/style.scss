@@ -15,7 +15,7 @@ $menu-height: 60px;
 .site-title {
 	height: $menu-height;
 	width: 120px;
-    background-image: url(../logo.svg);
+    background-image: url({{site.baseurl}}/assets/logo.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
