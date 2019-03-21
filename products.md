@@ -25,7 +25,7 @@ description: Любые электро-, тепло-, водо-, газо- сч�
   <div class="supporting-text">{{ product.brief | truncate: 120, " .."}}</div>
     <div class="actions">
       <div class="action-buttons">
-      	<a href="{{ product.url }}" class="button">details</a>
+      	<a href="{{site.baseurl}}/{{ product.url }}" class="button">details</a>
     </div>
     <div class="action-icons float-right"> <i class="material-icons action-icon" role="button" title="More options">more_vert</i> 
     </div>
