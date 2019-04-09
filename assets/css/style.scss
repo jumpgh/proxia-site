@@ -33,7 +33,7 @@ $menu-height: 60px;
 
 .page-banner {
 	height: 230px;
-	padding-top: $menu-height;
+	padding: 30px;
 	padding-top: 2 * $menu-height;
 	color: $menu-font-color;
 	background-color: #263238;
@@ -64,17 +64,36 @@ nav ul {
     	vertical-align: text-top;
 
 		.submenu {
-			position: absolute;
 			width:100%;
+			position: absolute;
 			height: 200px;
 			left:0;
 			background-color: $menu-background-color;
-			display: none;
+			/*display: none;*/
 			ul {
+				left: 50%;
 				li {
 					text-transform: uppercase;
 					clear: left;
 					margin-left: 70%;
+					&:after {
+						content: '';
+						left:0;
+						width: 0; 
+						height: 2px;
+						display: block;
+						margin-top: 5px;
+						right: 0;
+						background: green;
+						transition: width .5s ease;
+				        -webkit-transition: width .5s ease;
+				 	}
+				 
+					&:hover:after {
+				  		width: 200px;
+				  		left: 0;
+				  		background: lime;
+					}
 				}
 			}
 		}
@@ -95,21 +114,10 @@ nav ul {
 	margin-bottom: 100px;	
 }
 
-.submenu {
-	height: 200px;
-	background-color: $menu-background-color;
-    display: none;
-}
-
-
-
 .site-nav {
 	background-color: $menu-background-color;
 	border: 0;
 	color: white;
-}
-
-.site-nav {
 	@media screen and (max-width: 600px) {
 		width: 50%;
 	}
@@ -117,11 +125,13 @@ nav ul {
 
 .site-nav .page-link {
 	color: $menu-font-color;
-	padding-left: 15px;
+	padding-left: 20px;
+
 	&:hover {
 		color:white;
     	text-decoration: none;
 	}
+
 }
 
 .site-footer {

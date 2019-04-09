@@ -35,9 +35,9 @@ nav:
   - title: use case
     url: /usecase
     submenu:
-      - title: case 1
+      - title: case 1 blah-blah
         url: /usecase/case1.html
-      - title: case 2
+      - title: case 2 blah-blah
         url: /usecase/case2.html
   - title: about
     url: /about
